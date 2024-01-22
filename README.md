@@ -51,3 +51,8 @@ Host <remote hostname>
 
 Should be done now, to test run in the terminal: `ssh -T git@<remote hostname>`
 
+### Git Alias:
+
+```git config --global alias.acp '!f() { git add --all && git commit -m "$1" && git push; }; f'```
+
+```git acp "Your commit message here"```
